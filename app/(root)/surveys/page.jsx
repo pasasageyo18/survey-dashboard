@@ -40,7 +40,7 @@ export default function Page() {
       const res = await fetch(`http://localhost:3000/api/survey?id=${id}`, {
         method: "DELETE",
       });
-      if (res.ok) router.refresh();
+      if (res.ok) window.location.reload();
     }
   };
 
